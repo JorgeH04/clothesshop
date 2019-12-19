@@ -1,0 +1,35 @@
+<div class="container">
+        <h2>New arrivals</h2>
+        {{#each clothes}}  
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="product-top">
+                <img src="{{ imagePath }}" alt="">
+                <div class="overlay">
+                    <button type="button" class="btn btn-secondary"
+                    title="Quick Shop"></button>
+                    <button type="button" class="btn btn-secondary"
+                    title="Quick Shop"></button>
+                    <button type="button" class="btn btn-secondary"
+                    title="Quick Shop"></button>
+                </div>
+                </div>
+                <div class="product-bottom text-center">
+
+                    <i class="fa fa-start"></i>
+                    <i class="fa fa-start"></i>
+                    <i class="fa fa-start"></i>
+                    <i class="fa fa-start"></i>
+                    <i class="fa fa-start"></i>
+                    <h3>{{ product }}</h3>
+                    <h5>$ {{ price }}</h5>
+                    <a href="/addtocard/{{_id}}" class="btn btn-success pull-right" role="button">Add</a>
+
+                </div>
+            </div>
+            	
+        </div>
+    </div>
+     {{/each}}

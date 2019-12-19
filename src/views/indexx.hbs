@@ -1,0 +1,33 @@
+
+      		
+
+
+  			<div class="container">
+   <div class="row mt-5">
+   	 <h2>Similar Products</h2>
+   </div>
+   
+   <div class="row mt-5">
+	   			     {{#each clothes}}   
+
+   	<div class="col-md-3">
+   		<div class="card">
+   			<img class="card-img-top img-fluid" src="{{ imagePath }}">
+   			<div class="card-title">
+   				<h4>GYM Tops</h4>
+   			</div> 
+			   <h3 class="title"><a href="#">{{ product }}</a></h3>
+  						<div class="price">${{ price }}</div>
+   			<div class="card-text">
+   				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae fugiat et voluptate sunt officia vero molestias.<br/><br/>
+   				<a class="btn btn-success text-light"> Buy Now</a> &nbsp; <a class="btn btn-danger text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i>  Add To Cart</a> <br/><br/>
+   			</div>
+   		</div>
+   	</div>
+   	 {{/each}}
+   	
+   
+   </div>
+   
+   
+</div>
